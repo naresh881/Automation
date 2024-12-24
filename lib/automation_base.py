@@ -541,6 +541,11 @@ class Base(object):
         logging.info(expected_url)
         assert expected_url == actual_url
         
+    def url_validations(self, context, actual_url):
+        expected_url = context.behave_driver.current_url
+        logging.info(expected_url)
+        assert expected_url == actual_url    
+        
     
     # Send the data into the text field using class name
     def input_data_with_contains_class(self, context, name, class_name):
