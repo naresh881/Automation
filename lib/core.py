@@ -30,7 +30,7 @@ class Infinity(object):
                 executable_path=executable_path, options=chrome_options)
 
         # for firefox
-        elif driver_name == 'firefox':
+        elif driver_name == 'Chat':
             firefox_options = ff_options()
             if len(options):
                 firefox_options.add_argument("--headless")
