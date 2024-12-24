@@ -78,6 +78,13 @@ def last_last_opened(context):
     base_methods.focus_last_opened_tab(context)
 
 
+    # Focus on last opened tab
+@When('I focus on last opened tab using Xpath')
+def last_last_opened(context):
+    base_methods.focus_last_opened_tab(context)
+
+
+
 # Clear the text field using placeholder
 @When('I clear the data using "{placeholder}" from the text field')
 def clear_input_data_placeholder(context, placeholder):
