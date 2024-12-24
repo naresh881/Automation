@@ -79,7 +79,7 @@ def last_last_opened(context):
 
 
     # Focus on last opened tab
-@When('I focus on last opened tab using Xpath5656')
+@When('I focus on last opened tab using Xpath')
 def last_last_opened(context):
     base_methods.focus_last_opened_tab(context)
 
